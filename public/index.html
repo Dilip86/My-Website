@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dilip's Portfolio</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+    <script src="https://kit.fontawesome.com/9e082aa5ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+
+            <nav>
+                <a href="#"><img src="Images/logo.png" class="logo" width="30px" height="30px"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#services">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <!-- <video src="Images/animation.mp4" width="100vw" height="100vh"></video> -->
+                <div class="header-text-main">
+                    <h1>Hi, My name is <span>Dilip</span></h1>
+                    <p>I am <span id="element"></span></p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+
+    <!-------about------>
+    <div id="about">
+        <div class="container row">
+
+            <div class="about-col-1">
+                <img src="Images/about-pic.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Hi, I'm Dilip Nayak from Kashinagar, Odisha. Recently I have completed BTech ECE at GIET University,
+                    Gunupur. As
+                    a Front-End Developer with entry-level experience specializing in web development, user interface
+                    design, HTML, CSS, JavaSrcipt, React JS. Adept at identifying opportunities to enhance front-end
+                    design and
+                    improve the user experience.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('personaldetails')">Personal Details</p>
+
+
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="personaldetails">
+                    <ul>
+                        <li><span><b>Birthday:</b> 22 April 2002</span></li>
+                        <li><span><b>Website:</b> www.dilip-nayak.web.app </span></li>
+                        <li><span><b>Phone:</b> +91 8675555335</span></li>
+                        <li><span><b>City:</b> Hyderabad</span></li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><strong>Freelance Web Developer</strong></li>
+                        <li><strong>Role: </strong>Freelancer</li>
+                        <li><strong>Technology Used: </strong>{ HTML, CSS, JavaScript, Wordpress, Plesk Tool }</li>
+                        <li class="work-description"></li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li><strong>Internship</strong></li>
+                        <li><strong>Company: </strong>HighRadius</li>
+                        <li><strong>Role: </strong>Intern</li>
+                        <li><strong>Technology Used: </strong>{ HTML, CSS, JavaScript, ReactJS }</li>
+                        <li class="work-description"></li>
+                    </ul>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <div id="Skills">
+        <div class="container">
+
+            <h1 class="sub-title-dark">Skills</h1>
+            <!-- <div>
+            <button class="webdev">Web Dev</button><button class="ui/ux">UI/UX</button>
+        </div> -->
+            <div class="Web-dev-skills">
+                <div class="row-1">
+                    <img src="Images/html-icon.svg" height="70">
+                    <img src="Images/css-icon.svg" height="70">
+                    <img src="Images/javascript-programming-language-icon.svg" height="70">
+                    <img src="Images/react-js-icon.svg" height="70">
+                    <img src="Images/bootstrap-4-icon.svg" height="70">
+                </div>
+                <div class="row-2">
+                    <img src="Images/sass-icon.svg" height="70">
+                    <img src="Images/tailwind-css-icon.svg" height="70">
+                    <img src="Images/jquery-icon.svg" height="70">
+
+                </div>
+                <div class="row-3">
+                    <img src="Images/node-js-icon.svg" height="70">
+                    <img src="Images/mongodb-icon.svg" height="70">
+                    <img src="Images/mysql-icon.svg" height="70">
+                    <!-- <img src="/Images/nextjs-icon.svg" height="70" width="100"> -->
+
+                </div>
+            </div>
+
+            <!-- <div class="ui/ux">
+
+            </div> -->
+        </div>
+
+    </div>
+    <!-------Services---->
+
+    <div id="services">
+
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <h2>I transform ideas into interactive realities..</h2>
+            <p>I build custom websites and applications to help businesses succeed online.</p>
+            <div class="services-list">
+                <div class="web-service">
+                    <img src="Images/webapp.svg" alt="">
+                    <h2>Web Development</h2>
+                    <p>Explore this section to see examples of my coding expertise and development skills in action</p>
+                    <a href="mywork.html" class="anchortag">Know More</a>
+                </div>
+                <div class="ui-service">
+                    <img src="Images/ui ux.png" width="50" height="40">
+                    <h2>UI/UX Design</h2>
+                    <p>Explore this section to see my UI/UX work samples, For creating user-friendly and visually
+                        engaging digital experiences.</p>
+                    <a href="404.html" class="anchortag">Know more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <a href="#" class="btn">See more</a> -->
+
+    </div>
+
+    <!-----contact---->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title-dark">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> dilipnayak7652gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 8675555335</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/DilipNayak76" target="_blank"><i
+                                class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/___dilip.nayak___/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dilip-nayak-/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Dilip Nayak.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name*" required>
+                        <input type="email" name="Email" placeholder="Your Email*" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message*" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div>
+                <p>copyright &copy; 2023, All rights reserved</p>
+            </div>
+            <div>
+                <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+
+        var typed = new Typed('#element', {
+            strings: ['Fronend Developer', 'Web Designer', 'UI/UX Designer'],
+            typeSpeed: 50,
+        });
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = "https://script.google.com/macros/s/AKfycby3KCOWYwg7be3hqz-b-it53NhL3ajWJKcf--23IiHGNYjV9ObIsy7lTd4yk0V15QLY/exec"
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
